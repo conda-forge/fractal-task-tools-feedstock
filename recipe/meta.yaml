@@ -1,5 +1,5 @@
 {% set name = "fractal-task-tools" %}
-{% set version = "0.0.14" %}
+{% set version = "0.1.0" %}
 {% set python_min = "3.11.0" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fractal_task_tools-{{ version }}.tar.gz
-  sha256: 272955d115cc584b4a7d295e398dc11da5c8f5924d4c8f477cdf52da790fdb77
+  sha256: e1fef34183174958f9bf8eaa1085f23bc1ffaf0f8de02817ed4c6b3dfc58d404
 
 build:
   entry_points:
