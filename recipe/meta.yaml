@@ -1,5 +1,5 @@
 {% set name = "fractal-task-tools" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 {% set python_min = "3.11.0" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fractal_task_tools-{{ version }}.tar.gz
-  sha256: fbcde9f9c2e5975c57956cda3763e0d7695cdd1d5d32cffbd0386595c2eb5673
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/fractal_task_tools-{{ version }}.tar.gz
+  sha256: 20642e00325f5edbf39113bd84490557ea6fd7f716ef2e4abc1ab9cf77aa6f28
 
 build:
   entry_points:
@@ -25,8 +25,8 @@ requirements:
   run:
     - pydantic-core
     - python >={{ python_min }},<=3.13.0
-    - pydantic >=2.11.0,<2.13.0
-    - docstring_parser >=0.15,<=0.17
+    - pydantic >=2.11.0,<=2.14.0
+    - docstring_parser >=0.15,<=0.18
     - packaging
 
 test:
